@@ -1,0 +1,42 @@
+{
+    "name": "charithaprabhashwara/httplib",
+    "description": "",
+    "keywords": [
+        "charithaprabhashwara",
+        "httplib"
+    ],
+    "homepage": "https://github.com/charithaprabhashwara/httplib",
+    "license": "LGPL-3.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Charitha Prabhashwara",
+            "email": "prabhashwara.seu@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CharithaPrabhashwara\\HttpLib\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CharithaPrabhashwara\\HttpLib\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
