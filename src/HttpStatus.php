@@ -220,12 +220,21 @@ class HttpStatus{
     public const PARTIAL_CONTENT= 206;
 
     /**
-     * #### The HTTP 207 Multi-Status.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 207 Multi-Status provides status for multiple independent operations.
+     * HTTP 207 Multi-Status
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the server has processed multiple independent operations and is providing status information 
+     * for each operation. This status code is commonly used in **WebDAV** and other multi-resource operations where 
+     * multiple items are updated or retrieved in a single request.
+     *
+     * The response body typically contains a detailed list of status codes for each individual operation.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/207
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const MULTI_STATUS = 207;
 
