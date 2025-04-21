@@ -74,13 +74,20 @@ class HttpStatus{
     public const PROCESSING = 102;
 
     /**
-    * #### The HTTP 103 Early Hints.
-    * ##### Informational Status Code
-    * ###### Readmore ([Wikipedia](https://link-url-here.org))
-    * ###### Author: Charitha Prabhashwara | Date: 2025-04-20 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-    * 
-    * 103 Early Hints is primarily intended to be used with the Link header to allow the user agent to start preloading resources while the server prepares a response.
-    */
+     * HTTP 103 Early Hints
+     *
+     * Informational Status Code (1xx)
+     *
+     * Indicates that the server is likely to send a final response, and the client can begin preloading resources
+     * specified in the `Link` header. This status code is primarily used to improve perceived performance by
+     * allowing the browser to start fetching assets (e.g., CSS, JS) before the full response is ready.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/103
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#1xx_Informational_responses
+     *
+     * @author Charitha Prabhashwara
+     * @date 2025-04-20
+     */
     public const EARLY_HINTS = 103;
     
     // Successful responses
