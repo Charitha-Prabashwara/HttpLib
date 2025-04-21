@@ -113,12 +113,19 @@ class HttpStatus{
     public const OK= 200;
 
     /**
-     * #### The HTTP 201 Created.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 201 Created indicates that the request has been fulfilled and has resulted in one or more new resources being created.
+     * HTTP 201 Created
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the request has been fulfilled and has resulted in one or more new resources being created.
+     * This status code is typically returned in response to POST or PUT requests when a new resource has been successfully created.
+     * A `Location` header is often included in the response to indicate the URI of the newly created resource.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const CREATED = 201;
 
