@@ -40,14 +40,19 @@ class HttpStatus{
     public const CONTINUE = 100;
 
     /**
-     * #### The HTTP 101 Switching Protocols.
-     * ##### Informational Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 101 Switching Protocols indicates that the server is switching protocols as requested by the client.
-     * This is typically used in WebSocket connections or when the client requests an upgrade to a different protocol.
-     * 
+     * HTTP 101 Switching Protocols
+     *
+     * Informational Status Code (1xx)
+     *
+     * Indicates that the server understands and is willing to comply with the client's request to switch protocols,
+     * as sent in the `Upgrade` header. This status code is commonly used during the initial handshake phase of
+     * WebSocket connections or when upgrading from HTTP/1.1 to HTTP/2 or another protocol.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/101
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#1xx_Informational_responses
+     *
+     * @author Charitha Prabhashwara
+     * @date 2024-04-21
      */
     public const SWITCHING_PROTOCOLS = 101;
 
