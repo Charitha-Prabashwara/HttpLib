@@ -93,12 +93,22 @@ class HttpStatus{
     // Successful responses
     
     /**
-     * #### The HTTP 200 OK.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 200 OK indicates that the request has succeeded.
+     * HTTP 200 OK
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the request has succeeded. The meaning of the success depends on the HTTP method:
+     * - GET: the resource has been fetched and is transmitted in the response.
+     * - POST: the resource has been created or updated.
+     * - DELETE/PUT: the operation was successful.
+     *
+     * This is the most commonly used HTTP status code.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const OK= 200;
 
