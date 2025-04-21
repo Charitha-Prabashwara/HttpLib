@@ -57,13 +57,20 @@ class HttpStatus{
     public const SWITCHING_PROTOCOLS = 101;
 
     /**
-    * #### The HTTP 102 Processing.
-    * ##### Informational Status Code
-    * ###### Readmore ([Wikipedia](https://link-url-here.org))
-    * ###### Author: Charitha Prabhashwara | Date: 2025-04-20 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-    *
-    * 102 Processing indicates that the server has received and is processing the request, but no response is available yet.
-    */
+     * HTTP 102 Processing
+     *
+     * Informational Status Code (1xx)
+     *
+     * Indicates that the server has received and is processing the request, but no response is available yet.
+     * This status code is primarily used with WebDAV requests to avoid client timeouts when a request may take
+     * a long time to complete.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/102
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#1xx_Informational_responses
+     *
+     * @author Charitha Prabhashwara
+     * @date 2025-04-21
+     */
     public const PROCESSING = 102;
 
     /**
