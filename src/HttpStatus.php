@@ -203,12 +203,19 @@ class HttpStatus{
     public const RESET_CONTENT = 205;
 
     /**
-     * #### The HTTP 206 Partial Content.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 206 Partial Content is used when the server is delivering only part of the resource due to a range header sent by the client.
+     * HTTP 206 Partial Content
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the server is delivering only a part of the resource, as requested by the client using a 
+     * `Range` header. This status code is commonly used for resuming interrupted downloads or for serving 
+     * portions of large files, such as video streaming or when only a specific byte range of a file is requested.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/206
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const PARTIAL_CONTENT= 206;
 
