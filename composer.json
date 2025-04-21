@@ -42,6 +42,17 @@
         "sort-packages": true,
         "allow-plugins": {
             "phpdocumentor/shim": true
-        }
-    }
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+
+
+    },
+    "extra": {
+        "exclude": [
+          "/docs/",
+          "/guides/",
+          "/phpdoc.dist.xml"
+        ]
+      }
 }
