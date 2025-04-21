@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc version="3">
+  <title>My PHP Library</title>
+
+  <paths>
+    <directory>src</directory> <!-- Update this if your code is in a different folder -->
+  </paths>
+
+  <output>
+    <target>docs</target> <!-- The folder where the docs will be generated -->
+  </output>
+
+  <parser>
+    <visibility>public,protected</visibility> <!-- Add 'private' if you want to include private members -->
+    <default-package-name>MyLibrary</default-package-name>
+    <encoding>utf-8</encoding>
+  </parser>
+
+  <transformer>
+    <target>docs</target>
+  </transformer>
+</phpdoc>
