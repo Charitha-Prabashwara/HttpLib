@@ -186,12 +186,19 @@ class HttpStatus{
     public const NO_CONTENT= 204;
 
     /**
-     * #### The HTTP 205 Reset Content.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 205 Reset Content tells the client to reset the document view, such as clearing a form for input.
+     * HTTP 205 Reset Content
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the server has successfully processed the request, but the client should reset the document view. 
+     * This is typically used to instruct the client to clear forms or reset the user interface to a clean state 
+     * after successfully processing a request (e.g., after submitting a form).
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/205
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const RESET_CONTENT = 205;
 
