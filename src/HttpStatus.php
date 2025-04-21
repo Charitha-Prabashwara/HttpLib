@@ -130,23 +130,41 @@ class HttpStatus{
     public const CREATED = 201;
 
     /**
-     * #### The HTTP 202 Accepted.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 202 Accepted indicates that the request has been accepted for processing, but the processing has not been completed.
+     * HTTP 202 Accepted
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the request has been accepted for processing, but the processing has not been completed.
+     * This status code is typically used for asynchronous operations. The request might be acted upon in the future,
+     * and the final outcome may be delivered via a separate process or callback.
+     *
+     * No guarantee is given that the request will be completed successfully.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const Accepted = 202;
 
 
     /**
-     * #### The HTTP 203 Non-Authoritative Information.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 203 Non-Authoritative Information indicates that the request was successful but the enclosed payload has been modified from that of the origin server's 200 OK response.
+     * HTTP 203 Non-Authoritative Information
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the request was successful, but the enclosed payload has been modified by a transforming proxy
+     * from that of the origin server’s `200 OK` response. This status is typically used in environments with
+     * intermediary caches or filters that alter the response content before delivering it to the client.
+     *
+     * The information may be slightly different from the original source, but the request itself succeeded.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/203
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const NON_AUTHORITATIVE_INFORMATION = 203;
 
