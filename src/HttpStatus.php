@@ -239,22 +239,40 @@ class HttpStatus{
     public const MULTI_STATUS = 207;
 
     /**
-     * #### The HTTP 208 Already Reported.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 208 Already Reported indicates that the members of a DAV binding have already been enumerated in a previous reply to this request, and are not being included again.
+     * HTTP 208 Already Reported
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the members of a DAV binding have already been enumerated in a previous response to this request,
+     * and are not being included again. This status code is used within a `207 Multi-Status` response to avoid repeatedly
+     * listing the same internal members of a collection in WebDAV operations.
+     *
+     * It helps reduce redundancy in complex multi-resource responses.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/208
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const ALREADY_REPORTED = 208;
 
     /**
-     * #### The HTTP 226 IM Used.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 226 IM Used indicates that the server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
+     * HTTP 226 IM Used
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the server has fulfilled a `GET` request for the resource, and the response reflects one or more
+     * instance-manipulations applied to the current instance. This status code is part of the HTTP Delta encoding extension,
+     * allowing clients to request and receive only the changes (deltas) rather than the entire resource.
+     *
+     * It improves efficiency by reducing bandwidth when partial updates are sufficient.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/226
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const IM_USED = 226;
 
