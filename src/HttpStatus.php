@@ -21,15 +21,21 @@ namespace CharithaPrabhashwara\HttpLib;
 class HttpStatus{
     // 1xx Informational responses
 
-    /**
-     * #### The HTTP 100 Continue.
-     * ##### Informational Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org)) 
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 100 Continue means the server has received the request headers, and the client should now send the
-     * request body (e.g., in a POST request). It's used when the client includes the Expect: 100-continue header,
-     * allowing the server to validate headers before the client sends a potentially large body.
+   /**
+     * HTTP 100 Continue
+     *
+     * Informational Status Code (1xx)
+     *
+     * Indicates that the initial part of the request has been received and the client should proceed
+     * with sending the request body. This status code is typically used in conjunction with the
+     * `Expect: 100-continue` header, allowing the server to validate the request headers before the client
+     * sends a potentially large payload (e.g., in a POST or PUT request).
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/100
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#1xx_Informational_responses
+     *
+     * @author Charitha Prabhashwara
+     * @date 2024-04-21
      */
     public const CONTINUE = 100;
 
