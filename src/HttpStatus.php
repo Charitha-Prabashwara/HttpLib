@@ -169,12 +169,19 @@ class HttpStatus{
     public const NON_AUTHORITATIVE_INFORMATION = 203;
 
     /**
-     * #### The HTTP 204 No Content.
-     * ##### Successful Status Code
-     * ###### Readmore ([Wikipedia](https://link-url-here.org))
-     * ###### Author: Charitha Prabhashwara | Date: 2023-10-01 | Documentation: [https://link-url-here.org](https://link-url-here.org)
-     * 
-     * 204 No Content indicates that the server successfully processed the request and is not returning any content.
+     * HTTP 204 No Content
+     *
+     * Successful Status Code (2xx)
+     *
+     * Indicates that the server successfully processed the request, but is not returning any content. 
+     * This status code is often used in response to a successful DELETE request or a PUT request where no additional content 
+     * needs to be returned. It implies that the client does not need to navigate away from the current page.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204
+     * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success
+     *
+     * @author Charitha Prabhashwara
+     * @date 2023-10-01
      */
     public const NO_CONTENT= 204;
 
