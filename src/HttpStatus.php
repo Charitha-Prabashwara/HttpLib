@@ -59,7 +59,7 @@ class HttpStatus{
     /**
      * HTTP 101 Switching Protocols
      *
-     * Informational Status Code (1xx)
+     * Informational Status Code (1xx) 
      *
      * Indicates that the server understands and is willing to comply with the client's request to switch protocols,
      * as sent in the `Upgrade` header. This status code is commonly used during the initial handshake phase of
