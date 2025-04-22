@@ -7,7 +7,7 @@
 >
     <title>HttpLib</title> 
     <paths>
-        <output>docs/3.0.0</output>
+        <output>docs/</output>
         <cache>docs/cache</cache>
     </paths>
 
